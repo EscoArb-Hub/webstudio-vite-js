@@ -17,70 +17,23 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-
 <body>
     <header class="header">
-        <div class=" head">
+        <div class="conteiner head">
             <nav class="nav">
                 <a class="header__logo" href="/">Web<span class="header__logo--black">Studio</span></a>
-                <input class="header__input" type="checkbox" id="toggle">
-                <label class="label" for="toggle">
-                    <svg class="label__button-opened" width="24" height="16" viewBox="0 0 24 16" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
-                            fill="black" />
-                    </svg>
-                    <svg class="label__button-closed" width="19" height="19" viewBox="0 0 19 19" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z"
-                            fill="#212121" />
-                    </svg>
-                </label>
-                <ul class="label-list">
-                    <li class="label-list__item">
-                        <h2 class="label-list__title"><a class="label-list__link--curent">Студія</a></h2>
-                    </li>
-                    <li class="label-list__item">
-                        <h2 class="label-list__title"><a class="label-list__link">Портфоліо</a></h2>
-                    </li>
-                    <li class="label-list__item">
-                        <h2 class="label-list__title"><a class="label-list__link">Контакти</a></h2>
-                    </li>
-                    <li class="label-list__item">
-                        <a class="label-list__phone" href="mailto:info@devstudio.com">+38 096 111 11 11</a>
-                    </li>
-                    <li class="label-list__item">
-                        <a class="label-list__email" href="tel:+380961111111">info@devstudio.com</a>
-                    </li>
-                    <li class="label-list__item">
-                        <ul class="social-media-list">
-                            <li class="social-media-list__item">
-                                <p class="social-media-list__text">
-                                    <a class="social-media-list__link" href="https://www.instagram.com/">Instagram</a>
-                                </p>
-                            </li>
-                            <li class="social-media-list__item">
-                                <p class="social-media-list__text">
-                                    <a class="social-media-list__link" href="https://x.com/?lang=uk">Twitter</a>
-                                </p>
-                            </li>
-                            <li class="social-media-list__item">
-                                <p class="social-media-list__text">
-                                    <a class="social-media-list__link"
-                                        href="https://www.facebook.com/?locale=uk_UA">Facebook</a>
-                                </p>
-                            </li>
-                            <li class="social-media-list__item">
-                                <p class="social-media-list__text">
-                                    <a class="social-media-list__link" href="https://ua.linkedin.com/">LinkedIn</a>
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
 
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                    <span class="toggle-label">
+                        <svg class="header__svg" width="24" height="16" viewBox="0 0 24 16" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </label>
 
                 <ul class="header-list">
                     <li class="header-list__item"><a class="header-list__link--active" href="./index.html">Студія</a>
@@ -94,19 +47,15 @@
             <ul class="list">
                 <li class="list__item">
                     <a class="list__contacts" href="mailto:info@devstudio.com">
-                        <svg class="list__svg" xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="none">
-                            <path
-                                d="M14.5 0h-13C.673 0 0 .673 0 1.5v9c0 .827.673 1.5 1.5 1.5h13c.827 0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5Zm0 1c.068 0 .133.014.192.039L8 6.839l-6.692-5.8A.498.498 0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.095l6.672 5.783a.5.5 0 0 0 .656 0L15 2.095V10.5a.5.5 0 0 1-.5.5Z" />
+                        <svg class="list__svg" width="16" height="12">
+                            <use href="./images/symboldefs.svg#envelope"></use>
                         </svg>
                         info@devstudio.com</a>
                 </li>
                 <li class="list__item">
                     <a class="list__contacts" href="tel:+380961111111">
-                        <svg class="list__svg" xmlns="http://www.w3.org/2000/svg" width="10" height="16" fill="none">
-                            <path
-                                d="M8.5 0h-7C.673 0 0 .673 0 1.5v13c0 .827.673 1.5 1.5 1.5h7c.827 0 1.5-.673 1.5-1.5v-13C10 .673 9.327 0 8.5 0Zm-7 1h7a.5.5 0 0 1 .5.5V12H1V1.5a.5.5 0 0 1 .5-.5Zm7 14h-7a.5.5 0 0 1-.5-.5V13h8v1.5a.5.5 0 0 1-.5.5Z" />
-                            <path
-                                d="M2.354 13.739a.445.445 0 0 1 0 .66.525.525 0 0 1-.708 0 .445.445 0 0 1 0-.66.525.525 0 0 1 .708 0Z" />
+                        <svg class="list__svg" width="10" height="16">
+                            <use href="./images/symboldefs.svg#smartphone"></use>
                         </svg>
                         +38 096 111 11 11
                     </a>
@@ -118,7 +67,6 @@
         <section class="hero">
             <div class="conteiner heromain">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-
                 <button class="hero__button" type="button" data-modal-open>Замовити послугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
@@ -201,28 +149,15 @@
                 <h3 class="images__ourjob">Чим ми займаємося</h3>
                 <ul class="images__list">
                     <li class="images__item">
-                        <picture>
-                            <source srcset="./images/doing-1-1x.jpg, ./images/doing-1-2x.jpg"
-                                media="(min-width: 1200px)">
-                            <img class="images__img" src="./images/doing-1-1x.jpg" alt="програмування">
-                        </picture>
+                        <img class="images__img" src="./images/img.jpg" alt="програмування">
                         <p class="images__text">Десктопні додатки</p>
                     </li>
                     <li class="images__item">
-                        <picture>
-                            <source srcset="./images/doing-2-1x.jpg, ./images/doing-2-2x.jpg"
-                                media="(min-width: 1200px)">
-                            <img class="images__img" src="./images/doing-2-1x.jpg" alt="дизайн">
-                        </picture>
-
+                        <img class="images__img" src="./images/img-2.jpg" alt="дизайн">
                         <p class="images__text">Мобільні додатки</p>
                     </li>
                     <li class="images__item">
-                        <picture>
-                            <source srcset="./images/doing-3-1x.jpg, ./images/doing-3-2x.jpg"
-                                media="(min-width: 1200px)">
-                            <img class="images__img" src="./images/doing-3-1x.jpg" alt="оформлення">
-                        </picture>
+                        <img class="images__img" src="./images/img-3.jpg" alt="оформлення">
                         <p class="images__text">Дизайнерські рішення</p>
                     </li>
                 </ul>
@@ -233,12 +168,7 @@
                 <h2 class="workers__title">Наша команда</h2>
                 <ul class="workers-list">
                     <li class="workers-list__item">
-                        <picture>
-                            <source srcset="./images/igor-d-1x.jpg, ./images/igor-d-2x.jpg" media="(min-width: 1200px)">
-                            <source srcset="./images/igor-t-1x.jpg, ./images/igor-t-2x.jpg" media="(min-width: 768px)">
-                            <source srcset="./images/igor-m-1x.jpg, ./images/igor-m-2x.jpg" media="(min-width: 480px)">
-                            <img class="workers-list__img" src="./images/igor-m-1x.jpg" alt="Ігор">
-                        </picture>
+                        <img class="workers-list__img" src="./images/img-44.jpg" alt="Ігор">
                         <p class="workers-list__text">Ігор Дем'яненко</p>
                         <h3 class="workers-list__title">Product Designer</h3>
                         <ul class="workers-list--social-media">
@@ -250,16 +180,16 @@
                                 </a>
                             </li>
                             <li class="workers-list__item--social-media">
-                                <a class="workers-list__link" href="https://twitter.com/">
+                                <a class="workers-list__link" href="https://twitter.com/?lang=uk">
                                     <svg class="svgs" width="20" height="20">
-                                        <use href="./images/symboldefs.svg#twitter"></use>
+                                        <use href="./images/symboldefs.svg#facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="workers-list__item--social-media">
                                 <a class="workers-list__link" href="https://uk-ua.facebook.com/">
                                     <svg class="svgs" width="20" height="20">
-                                        <use href="./images/symboldefs.svg#facebook"></use>
+                                        <use href="./images/symboldefs.svg#twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -273,13 +203,7 @@
                         </ul>
                     </li>
                     <li class="workers-list__item">
-                        <picture>
-                            <source srcset="./images/olha-d-1x.jpg, ./images/olha-d-2x.jpg" media="(min-width: 1200px)">
-                            <source srcset="./images/olha-t-1x.jpg, ./images/olha-t-2x.jpg" media="(min-width: 768px)">
-                            <source srcset="./images/olha-m-1x.jpg, ./images/olha-m-2x.jpg" media="(min-width: 480px)">
-
-                            <img class="workers-list__img" src="./images/olha-m-1x.jpg" alt="Ольга">
-                        </picture>
+                        <img class="workers-list__img" src="./images/img-41.jpg" alt="Ольга">
                         <p class="workers-list__text">Ольга Рєпіна</p>
                         <h3 class="workers-list__title">Frontend Developer</h3>
                         <ul class="workers-list--social-media">
@@ -291,16 +215,16 @@
                                 </a>
                             </li>
                             <li class="workers-list__item--social-media">
-                                <a class="workers-list__link" href="https://twitter.com/">
+                                <a class="workers-list__link" href="https://twitter.com/?lang=uk">
                                     <svg class="svgs" width="20" height="20">
-                                        <use href="./images/symboldefs.svg#twitter"></use>
+                                        <use href="./images/symboldefs.svg#facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="workers-list__item--social-media">
                                 <a class="workers-list__link" href="https://uk-ua.facebook.com/">
                                     <svg class="svgs" width="20" height="20">
-                                        <use href="./images/symboldefs.svg#facebook"></use>
+                                        <use href="./images/symboldefs.svg#twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -314,15 +238,7 @@
                         </ul>
                     </li>
                     <li class="workers-list__item">
-                        <picture>
-                            <source srcset="./images/micola-d-1x.jpg, ./images/micola-d-2x.jpg"
-                                media="(min-width: 1200px)">
-                            <source srcset="./images/micola-t-1x.jpg, ./images/micola-t-2x.jpg"
-                                media="(min-width: 768px)">
-                            <source srcset="./images/micola-m-1x.jpg, ./images/micola-m-2x.jpg"
-                                media="(min-width: 480px)">
-                            <img class="workers-list__img" src="./images/micola-m-1x.jpg" alt="Микола">
-                        </picture>
+                        <img class="workers-list__img" src="./images/img-33.jpg" alt="Микола">
                         <p class="workers-list__text">Микола Тарасов</p>
                         <h3 class="workers-list__title">Marketing</h3>
                         <ul class="workers-list--social-media">
@@ -334,16 +250,16 @@
                                 </a>
                             </li>
                             <li class="workers-list__item--social-media">
-                                <a class="workers-list__link" href="https://twitter.com/">
+                                <a class="workers-list__link" href="https://twitter.com/?lang=uk">
                                     <svg class="svgs" width="20" height="20">
-                                        <use href="./images/symboldefs.svg#twitter"></use>
+                                        <use href="./images/symboldefs.svg#facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="workers-list__item--social-media">
                                 <a class="workers-list__link" href="https://uk-ua.facebook.com/">
                                     <svg class="svgs" width="20" height="20">
-                                        <use href="./images/symboldefs.svg#facebook"></use>
+                                        <use href="./images/symboldefs.svg#twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -357,15 +273,7 @@
                         </ul>
                     </li>
                     <li class="workers-list__item">
-                        <picture>
-                            <source srcset="./images/mihailo-d-1x.jpg, ./images/mihailo-d-2x.jpg"
-                                media="(min-width: 1200px)">
-                            <source srcset="./images/mihailo-t-1x.jpg, ./images/mihailo-t-2x.jpg"
-                                media="(min-width: 768px)">
-                            <source srcset="./images/mihailo-m-1x.jpg, ./images/mihailo-m-2x.jpg"
-                                media="(min-width: 480px)">
-                            <img class="workers-list__img" src="./images/mihailo-m-1x.jpg" alt="Михайло">
-                        </picture>
+                        <img class="workers-list__img" src="./images/img-22.jpg" alt="Михайло">
                         <p class="workers-list__text">Михайло Єрмаков</p>
                         <h3 class="workers-list__title">UI Designer</h3>
                         <ul class="workers-list--social-media">
@@ -377,16 +285,16 @@
                                 </a>
                             </li>
                             <li class="workers-list__item--social-media">
-                                <a class="workers-list__link" href="https://twitter.com/">
+                                <a class="workers-list__link" href="https://twitter.com/?lang=uk">
                                     <svg class="svgs" width="20" height="20">
-                                        <use href="./images/symboldefs.svg#twitter"></use>
+                                        <use href="./images/symboldefs.svg#facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="workers-list__item--social-media">
                                 <a class="workers-list__link" href="https://uk-ua.facebook.com/">
                                     <svg class="svgs" width="20" height="20">
-                                        <use href="./images/symboldefs.svg#facebook"></use>
+                                        <use href="./images/symboldefs.svg#twitter"></use>
                                     </svg>
                                 </a>
                             </li>
@@ -408,32 +316,32 @@
                 <ul class="clients-list">
                     <li class="clients-list__item">
                         <svg class="svg" width="41" height="47">
-                            <use href="./images/symboldefs.svg#group-1"></use>
+                            <use href="./images/symboldefs.svg#union"></use>
                         </svg>
                     </li>
                     <li class="clients-list__item">
                         <svg class="svg" width="40" height="52">
-                            <use href="./images/symboldefs.svg#group-2"></use>
+                            <use href="./images/symboldefs.svg#company"></use>
                         </svg>
                     </li>
                     <li class="clients-list__item">
                         <svg class="svg" width="45" height="42">
-                            <use href="./images/symboldefs.svg#group-3"></use>
+                            <use href="./images/symboldefs.svg#object"></use>
                         </svg>
                     </li>
                     <li class="clients-list__item">
-                        <svg class="svg" width="106" height="60">
-                            <use width="106" height="60" href="./images/symboldefs.svg#group-4"></use>
+                        <svg class="svg" width="85" height="42">
+                            <use href="./images/symboldefs.svg#foster"></use>
                         </svg>
                     </li>
                     <li class="clients-list__item">
                         <svg class="svg" width="63" height="47">
-                            <use href="./images/symboldefs.svg#group-5"></use>
+                            <use href="./images/symboldefs.svg#brand"></use>
                         </svg>
                     </li>
                     <li class="clients-list__item">
-                        <svg class="svg" width="106" height="60">
-                            <use width="106" height="60" href="./images/symboldefs.svg#group-6"></use>
+                        <svg class="svg" width="94" height="45">
+                            <use href="./images/symboldefs.svg#tagline"></use>
                         </svg>
                     </li>
                 </ul>
@@ -534,7 +442,7 @@
                         <input class="footer__input" type="text" id="rozsilka" placeholder="E-mail">
                         <button class="footer__button--subscribe">Підписатися
                             <svg class="footer-svg">
-                                <use href="./images/symboldefs.svg#send"></use>
+                                <use href="./images/symbol-defs.svg#send"></use>
                             </svg>
                         </button>
                     </form>
