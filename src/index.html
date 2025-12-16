@@ -234,9 +234,24 @@
                 <ul class="workers-list">
                     <li class="workers-list__item">
                         <picture>
-                            <source srcset="./images/igor-d-1x.jpg, ./images/igor-d-2x.jpg" media="(min-width: 1200px)">
-                            <source srcset="./images/igor-t-1x.jpg, ./images/igor-t-2x.jpg" media="(min-width: 768px)">
-                            <source srcset="./images/igor-m-1x.jpg, ./images/igor-m-2x.jpg" media="(min-width: 480px)">
+                            <source srcset="
+                            ./images/igor-d-1x.jpg 1x,
+                            ./images/igor-d-2x.jpg 2x
+                            "
+                            media="(min-width: 1200px)">
+
+                            <source srcset="
+                            ./images/igor-t-1x.jpg 1x,
+                             ./images/igor-t-2x.jpg 2x
+                             "
+                              media="(min-width: 768px)">
+
+                            <source srcset="
+                            ./images/igor-m-1x.jpg 1x,
+                             ./images/igor-m-2x.jpg 2x
+                             "
+                              media="(min-width: 480px)">
+                              
                             <img class="workers-list__img" src="./images/igor-m-1x.jpg" alt="Ігор">
                         </picture>
                         <p class="workers-list__text">Ігор Дем'яненко</p>
