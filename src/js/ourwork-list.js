@@ -36,3 +36,7 @@ const markup = dataOurworkList
 
 console.log("markup:", markup)
 ourworkList.insertAdjacentHTML("beforeend", markup);
+
+console.log("Варіант 2")
+
+ourworkList.innerHTML = markup
