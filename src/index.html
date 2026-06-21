@@ -202,16 +202,20 @@
                 <ul class="images__list">
                     <li class="images__item">
                         <picture>
-                            <source srcset="./images/doing-1-1x.jpg, ./images/doing-1-2x.jpg"
-                                media="(min-width: 1200px)">
+                            <source srcset="
+                            ./images/doing-1-1x.jpg 1x,
+                            ./images/doing-1-2x.jpg 2x
+                            " media="(min-width: 1200px)">
                             <img class="images__img" src="./images/doing-1-1x.jpg" alt="програмування">
                         </picture>
                         <p class="images__text">Десктопні додатки</p>
                     </li>
                     <li class="images__item">
                         <picture>
-                            <source srcset="./images/doing-2-1x.jpg, ./images/doing-2-2x.jpg"
-                                media="(min-width: 1200px)">
+                            <source srcset="
+                            ./images/doing-2-1x.jpg 1x,
+                            ./images/doing-2-2x.jpg 2x
+                            " media="(min-width: 1200px)">
                             <img class="images__img" src="./images/doing-2-1x.jpg" alt="дизайн">
                         </picture>
 
@@ -219,8 +223,18 @@
                     </li>
                     <li class="images__item">
                         <picture>
-                            <source srcset="./images/doing-3-1x.jpg, ./images/doing-3-2x.jpg"
-                                media="(min-width: 1200px)">
+                            <source srcset="
+                            ./images/doing-3-1x.jpg 1x,
+                            ./images/doing-3-2x.jpg 2x
+                            " media="(min-width: 1200px)">
+                            <source srcset="
+                            ./images/doing-3-1x.jpg 1x,
+                            ./images/doing-3-2x.jpg 2x
+                            " media="(min-width: 768px)">
+                            <source srcset="
+                            ./images/doing-3-1x.jpg 1x,
+                            ./images/doing-3-2x.jpg 2x
+                            " media="(min-width: 480px)">
                             <img class="images__img" src="./images/doing-3-1x.jpg" alt="оформлення">
                         </picture>
                         <p class="images__text">Дизайнерські рішення</p>
@@ -231,27 +245,27 @@
         <section class="workers">
             <div class="conteiner">
                 <h2 class="workers__title">Наша команда</h2>
-                <ul class="workers-list">
-                    <li class="workers-list__item">
+                <ul  class="workers-list">
+                    <!-- <li class="workers-list__item">
                         <picture>
                             <source srcset="
                             ./images/igor-d-1x.jpg 1x,
-                            ./images/igor-d-2x.jpg 2x
-                            "
-                            media="(min-width: 1200px)">
+                            ./images/igor-d-2x.jpg 2x,
+                            ./images/igor-d-3x.jpg 3x
+                            " media="(min-width: 1200px)">
 
                             <source srcset="
                             ./images/igor-t-1x.jpg 1x,
-                             ./images/igor-t-2x.jpg 2x
-                             "
-                              media="(min-width: 768px)">
+                            ./images/igor-t-2x.jpg 2x,
+                            ./images/igor-t-3x.jpg 3x
+                             " media="(min-width: 768px)">
 
                             <source srcset="
                             ./images/igor-m-1x.jpg 1x,
-                             ./images/igor-m-2x.jpg 2x
-                             "
-                              media="(min-width: 480px)">
-                              
+                            ./images/igor-m-2x.jpg 2x,
+                            ./images/igor-m-3x.jpg 3x
+                            " media="(min-width: 480px)">
+
                             <img class="workers-list__img" src="./images/igor-m-1x.jpg" alt="Ігор">
                         </picture>
                         <p class="workers-list__text">Ігор Дем'яненко</p>
@@ -289,9 +303,21 @@
                     </li>
                     <li class="workers-list__item">
                         <picture>
-                            <source srcset="./images/olha-d-1x.jpg, ./images/olha-d-2x.jpg" media="(min-width: 1200px)">
-                            <source srcset="./images/olha-t-1x.jpg, ./images/olha-t-2x.jpg" media="(min-width: 768px)">
-                            <source srcset="./images/olha-m-1x.jpg, ./images/olha-m-2x.jpg" media="(min-width: 480px)">
+                            <source srcset="
+                            ./images/olha-d-1x.jpg 1x,
+                            ./images/olha-d-2x.jpg 2x,
+                            ./images/olha-d-3x.jpg 3x
+                            " media="(min-width: 1200px)">
+                            <source srcset="
+                            ./images/olha-t-1x.jpg 1x, 
+                            ./images/olha-t-2x.jpg 2x,
+                            ./images/olha-t-2x.jpg 3x
+                            " media="(min-width: 768px)">
+                            <source srcset="
+                            ./images/olha-m-1x.jpg 1x, 
+                            ./images/olha-m-2x.jpg 2x,
+                            ./images/olha-m-3x.jpg 3x
+                            " media="(min-width: 480px)">
 
                             <img class="workers-list__img" src="./images/olha-m-1x.jpg" alt="Ольга">
                         </picture>
@@ -330,12 +356,21 @@
                     </li>
                     <li class="workers-list__item">
                         <picture>
-                            <source srcset="./images/micola-d-1x.jpg, ./images/micola-d-2x.jpg"
-                                media="(min-width: 1200px)">
-                            <source srcset="./images/micola-t-1x.jpg, ./images/micola-t-2x.jpg"
-                                media="(min-width: 768px)">
-                            <source srcset="./images/micola-m-1x.jpg, ./images/micola-m-2x.jpg"
-                                media="(min-width: 480px)">
+                            <source srcset="
+                            ./images/micola-d-1x.jpg 1x, 
+                            ./images/micola-d-2x.jpg 2x,
+                            ./images/micola-d-3x.jpg 3x
+                            " media="(min-width: 1200px)">
+                            <source srcset="
+                            ./images/micola-t-1x.jpg 1x, 
+                            ./images/micola-t-2x.jpg 2x,
+                            ./images/micola-t-3x.jpg 3x 
+                            " media="(min-width: 768px)">
+                            <source srcset="
+                            ./images/micola-m-1x.jpg 1x, 
+                            ./images/micola-m-2x.jpg 2x,
+                            ./images/micola-m-3x.jpg 3x 
+                            " media="(min-width: 480px)">
                             <img class="workers-list__img" src="./images/micola-m-1x.jpg" alt="Микола">
                         </picture>
                         <p class="workers-list__text">Микола Тарасов</p>
@@ -373,12 +408,21 @@
                     </li>
                     <li class="workers-list__item">
                         <picture>
-                            <source srcset="./images/mihailo-d-1x.jpg, ./images/mihailo-d-2x.jpg"
-                                media="(min-width: 1200px)">
-                            <source srcset="./images/mihailo-t-1x.jpg, ./images/mihailo-t-2x.jpg"
-                                media="(min-width: 768px)">
-                            <source srcset="./images/mihailo-m-1x.jpg, ./images/mihailo-m-2x.jpg"
-                                media="(min-width: 480px)">
+                            <source srcset="
+                            ./images/mihailo-d-1x.jpg 1x, 
+                            ./images/mihailo-d-2x.jpg 2x,
+                            ./images/mihailo-d-3x.jpg 3x
+                            " media="(min-width: 1200px)">
+                            <source srcset="
+                            ./images/mihailo-t-1x.jpg 1x, 
+                            ./images/mihailo-t-2x.jpg 2x,
+                            ./images/mihailo-t-3x.jpg 3x
+                            " media="(min-width: 768px)">
+                            <source srcset="
+                            ./images/mihailo-m-1x.jpg 1x, 
+                            ./images/mihailo-m-2x.jpg 2x,
+                            ./images/mihailo-m-3x.jpg 3x
+                            " media="(min-width: 480px)">
                             <img class="workers-list__img" src="./images/mihailo-m-1x.jpg" alt="Михайло">
                         </picture>
                         <p class="workers-list__text">Михайло Єрмаков</p>
@@ -413,7 +457,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </section>
@@ -557,7 +601,10 @@
             </address>
         </div>
     </footer>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js" type="module" defer></script>
+    <!--! Рендерить список розробників в секції "Наша команда" -->
+    <script type="module" src="./js/our-developers-list.js"></script>
+
 </body>
 
 </html>
